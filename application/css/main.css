@@ -1,0 +1,118 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    --first-color: #7448B6;
+    --first-color-alt: #625BCB;
+    --text-color: #000000;
+    --body-color: #b8bfd6;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Montserrat', sans-serif;
+    --normal-font-size: 16px;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background: var(--body-color);
+    background: linear-gradient(180deg, var(--body-color) 0%, #697A98 100%);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    margin: 0;
+    height: 100%;
+}
+
+button {
+    width: calc(100% / 2 - 8px);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+canvas{
+    display: block;
+    width: 100%;
+    background: #f4f4ef;
+}
+
+h1 {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 45px 15px 15px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background: #f4f4ef;
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    line-height: 145%;
+    text-align: right;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.help {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+    text-decoration: none;
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .35s ease-in-out;
+}
+
+.help:hover {
+    color: var(--first-color-alt);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#left {
+    width: 100%;
+    max-width: 500px;
+}
+
+#right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    max-width: 500px;
+}
